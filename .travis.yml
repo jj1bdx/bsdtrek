@@ -1,0 +1,8 @@
+language: c
+notifications:
+  email: false
+before_install: sudo apt-get install pmake
+install: true
+compiler:
+    - clang
+    - gcc
