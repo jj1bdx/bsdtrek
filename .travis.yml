@@ -2,6 +2,7 @@ language: c
 notifications:
   email: false
 before_install: sudo apt-get install pmake
+script: make
 install: true
 compiler:
     - clang
