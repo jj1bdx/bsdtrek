@@ -2,7 +2,7 @@ language: c
 notifications:
   email: false
 before_install: sudo apt-get install pmake
-script: pmake
+script: pmake CFLAGS="-g -O2 -pipe -std=c89"
 install: true
 compiler:
     - clang
