@@ -157,7 +157,9 @@ main(int argc, char **argv)
 	av = argv;
 	ac = argc;
 	av++;
-	srandomdev();
+
+	srandom(time(NULL)); /* srandomdev() */
+
 	opencode = 'w';
 	prio = PRIO;
 
