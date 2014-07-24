@@ -54,7 +54,7 @@
  * that are known to support the features properly (old versions of gcc-2
  * didn't permit keeping the keywords out of the application namespace).
  */
-#  if __GNUC_PREREQ__(2, 7)
+#  if __GNUC_PREREQ(2, 7)
 #    define __printflike(fmtarg, firstvararg)       \
             __attribute__((__format__ (__printf__, fmtarg, firstvararg)))
 #    define __scanflike(fmtarg, firstvararg)        \
