@@ -38,6 +38,11 @@
 #include <string.h>
 #include <unistd.h>
 #include <time.h>
+
+#ifndef __unused
+#define __unused	__attribute__((__unused__))
+#endif
+
 /*
 **  Global Declarations
 **
