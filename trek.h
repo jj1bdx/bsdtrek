@@ -38,6 +38,35 @@
 #include <string.h>
 #include <unistd.h>
 #include <time.h>
+
+#ifndef __unused
+#define __unused	__attribute__((__unused__))
+#endif
+
+/*
+ * The following printflike source for gcc is taken from
+ * https://mail-index.netbsd.org/tech-userlevel/2012/03/04/msg006197.html
+ */
+#ifndef __printflike
+/*
+ * Compiler-dependent macros to declare that functions take printf-like
+ * or scanf-like arguments.  They are null except for versions of gcc
+ * that are known to support the features properly (old versions of gcc-2
+ * didn't permit keeping the keywords out of the application namespace).
+ */
+#  if __GNUC_PREREQ(2, 7)
+#    define __printflike(fmtarg, firstvararg)       \
+            __attribute__((__format__ (__printf__, fmtarg, firstvararg)))
+#    define __scanflike(fmtarg, firstvararg)        \
+            __attribute__((__format__ (__scanf__, fmtarg, firstvararg)))
+#    define __format_arg(fmtarg)    __attribute__((__format_arg__ (fmtarg)))
+#  else
+#    define __printflike(fmtarg, firstvararg)       /* nothing */
+#    define __scanflike(fmtarg, firstvararg)        /* nothing */
+#    define __format_arg(fmtarg)                    /* nothing */
+#  endif
+#endif
+
 /*
 **  Global Declarations
 **
