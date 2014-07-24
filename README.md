@@ -9,8 +9,8 @@ This Star Trak game is originally from FreeBSD, with minimal change to build on 
 
 ## FreeBSD `trek` source code
 
-* Based on the ports [SVN revision r328087](http://svnweb.freebsd.org/ports/head/games/bsdgames/Makefile?revision=328087&view=markup) (tagged bsdtrek\_dragonflybsd)
-* See also <http://gitweb.dragonflybsd.org/dragonfly.git/tree/v2.4.0:/games>
+* Based on the ports [SVN revision r362720](http://svnweb.freebsd.org/ports/head/games/bsdgames/Makefile?revision=362720&view=markup) (tagged bsdtrek\_dragonflybsd\_3.8.1)
+* See also <http://gitweb.dragonflybsd.org/dragonfly.git/tree/v3.8.1:/games>
 
 ## On OS X
 
