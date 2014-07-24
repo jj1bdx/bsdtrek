@@ -147,7 +147,7 @@ main(int argc, char **argv)
 	av = argv;
 	ac = argc;
 	av++;
-	srandomdev();
+	srandom((unsigned)time(NULL)); /* srandomdev() */
 	while (ac > 1 && av[0][0] == '-') {
 		switch (av[0][1]) {
 #ifdef xTRACE
