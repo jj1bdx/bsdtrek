@@ -16,6 +16,6 @@ DPADD=	${LIBM}
 LDADD=	-lm
 HIDEGAME=hidegame
 
-CFLAGS=	-g -O2 -pipe
+CFLAGS=	-g -O2 -pipe -std=c99 -pedantic -Wall
 
 .include <bsd.prog.mk>
