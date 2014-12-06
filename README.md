@@ -16,6 +16,7 @@ This Star Trak game is originally from FreeBSD, with minimal change to build on 
 
 * Use `bsdmake` from MacPorts or Homebrew
     * setrlimit error message patch required <https://trac.macports.org/ticket/35612>
+* Tested on OS X 10.10.1 Yosemite
 
 ## On Ubuntu (and Travis CI)
 
