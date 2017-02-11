@@ -16,6 +16,6 @@ DPADD=	${LIBM}
 LDADD=	-lm
 HIDEGAME=hidegame
 
-CFLAGS=	-g -O2 -pipe -std=c99 -pedantic -Wall
+CFLAGS=	-g -O2 -pipe -std=c99 -D_XOPEN_SOURCE=600 -pedantic -Wall -Wno-error=unused-result
 
 .include <bsd.prog.mk>
