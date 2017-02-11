@@ -31,6 +31,7 @@
  * $FreeBSD: src/games/trek/main.c,v 1.7.2.1 2001/03/05 12:11:14 kris Exp $
  */
 
+#include <stdlib.h>
 #include "trek.h"
 #include "getpar.h"
 
